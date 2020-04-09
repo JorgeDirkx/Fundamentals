@@ -1,6 +1,6 @@
-package com.jorgedirkkx.variables;
+package com.jorgedirkx.variables;
 
-public class Main {
+public class App {
     public static void main(String[] args) {
 
         //primitive datatypes

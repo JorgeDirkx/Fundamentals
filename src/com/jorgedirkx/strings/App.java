@@ -1,6 +1,6 @@
-package com.jorgedirkkx.strings;
+package com.jorgedirkx.strings;
 
-public class Main {
+public class App {
 
     //String: working with text
     //non primitive data type

@@ -1,6 +1,6 @@
-package com.jorgedirkkx.loops;
+package com.jorgedirkx.loops;
 
-public class Main {
+public class App {
     public static void main(String[] args) {
         int value;
         value = 1;
