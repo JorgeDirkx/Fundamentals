@@ -32,6 +32,6 @@ public class App {
 
         //Removing items
         numbers.remove(numbers.size()-1);
-        
+
     }
 }
