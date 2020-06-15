@@ -4,6 +4,8 @@ public class App {
 
     public static void main(String[] args) {
 
+        //data of a certain type can be forced to another type
+
         int intValue = 123;
         long longValue = 2345;
 

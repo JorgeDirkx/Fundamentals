@@ -9,14 +9,20 @@ public class App {
     public static void main(String[] args) {
 
         ArrayList<Integer> numbers = new ArrayList<Integer>();
+        ArrayList<Integer> numbers2 = new ArrayList<>();
 
         //adding
         numbers.add(50);
         numbers.add(80);
         numbers.add(83);
 
+        numbers2.add(5);
+
+
         //retrieving
         System.out.println(numbers);
+        System.out.println(numbers2);
+
         //retrieving with index
         System.out.println(numbers.get(2));
 
