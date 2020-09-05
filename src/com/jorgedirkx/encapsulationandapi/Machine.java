@@ -15,7 +15,6 @@ public class Machine {
         this.name = name;
     }
 
-
     public int calculatGrowF(){
         return 9;
     }

@@ -6,6 +6,7 @@ public class App {
 
         //formatting
         System.out.printf("total cost %-10d; quantity is %d\n", 5, 20 );
+        System.out.printf("this is the numeber 10: %d", 10);
 
         for(int i = 0; i <10; i++){
             System.out.printf("%-2d: %s\n", i, "here is some text");

@@ -1,1 +1,25 @@
 Overview Fundamentals
+
+COLLECTIONS (interface) FRAMEWORK:
+
+- ordered
+- sorted
+
+Iterator interface: runs through all the elements. Methods used: hasNext() and next().
+
+List = ordered + duplicates
+
+ArrayList = based on an Array, dynamic adaptation, lenght needs to be changed every time
+
+LinkedList = double connected List, suitable for adding and removing
+
+Set = collection of unique elements, duplicates have the same HashCode (equals method)
+
+HashSet = not ordered, not sorted -->HashCode = index; is a row with elements with the same HashCode
+                                                (equals method checks for duplicates)
+
+LinkedHashSet = ordered, not sorted
+
+SortedSet = ordered, sorted
+
+NavigableSet = ordered, sorted + info about other element

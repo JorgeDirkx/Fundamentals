@@ -25,6 +25,14 @@ public class App {
         }
 
 
+        //for each
+        for (Integer numbers:values2
+             ) {
+            System.out.println(numbers);
+
+        }
+
+
 
     }
 }
