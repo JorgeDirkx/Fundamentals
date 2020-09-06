@@ -1,6 +1,133 @@
 Overview Fundamentals
+========================================================================================================================
+========================================================================================================================
 
-COLLECTIONS (interface) FRAMEWORK:
+connditional(ternaire) operator: op1?op2:op3
+
+b1 = b1 + b2 ---> b1+=b2
+* String class
+
+s1 == s2 : checking for same object.
+s1.equals(s2) : checking for the same content.
+
+========================================================================================================================
+
+* StringBuilder
+
+========================================================================================================================
+
+* Formatter class
+
+========================================================================================================================
+*         own class - package classes - sub classes - all classes
+private     x
+package     x           x
+protected   x           x                   x
+public      x           x                   x               x
+
+========================================================================================================================
+* Associations : an object or class uses the possibilities of another class or object.
+  - Aggregation : one object or class own the other object/class
+  - Composition: one object or calss can NOT exist without the other
+
+* High Cohesion: making sure one class has one specific task
+
+========================================================================================================================
+
+* Inheritance : subclass inherits properties and methods from parentclass with extend.
+ ---> methods are OVERRIDDEN
+
+========================================================================================================================
+
+* Polymorfism
+
+========================================================================================================================
+
+* Simple classes
+
+========================================================================================================================
+
+* Interfaces: use on different objects giving a unique behavior without being from the same parentclass
+
+========================================================================================================================
+
+* Lambda Expressions:
+
+Lambda expressions basically express instances of functional interfaces (An interface with single abstract method
+ is called functional interface. An example is java.lang.Runnable). lambda expressions implement the only abstract
+ function and therefore implement functional interfaces
+
+ Please note: Lambda expressions are just like functions and they accept parameters just like functions.
+
+lambda expressions are added in Java 8 and provide below functionalities.
+
+Enable to treat functionality as a method argument, or code as data.
+A function that can be created without belonging to any class.
+A lambda expression can be passed around as if it was an object and executed on demand.
+
+// Java program to demonstrate lambda expressions
+// to implement a user defined functional interface.
+
+// A sample functional interface (An interface with
+// single abstract method
+interface FuncInterface
+{
+    // An abstract function
+    void abstractFun(int x);
+
+    // A non-abstract (or default) function
+    default void normalFun()
+    {
+       System.out.println("Hello");
+    }
+}
+
+class Test
+{
+    public static void main(String args[])
+    {
+        // lambda expression to implement above
+        // functional interface. This interface
+        // by default implements abstractFun()
+        FuncInterface fobj = (int x)->System.out.println(2*x);
+
+        // This calls above lambda expression and prints 10.
+        fobj.abstractFun(5);
+    }
+}
+
+========================================================================================================================
+
+* Generics
+
+========================================================================================================================
+
+* Exception Handling
+
+========================================================================================================================
+
+* Inner and Anonymous Classes:
+
+Innerclass = class within a class
+--> innerclass always has access to the members of the outer class, even the private ones
+
+Local inner class = if class is within a method
+
+Anonymous inner class = local inner class without a name
+
+Static nested classes
+
+========================================================================================================================
+
+* Streaming API:
+
+= stream of objects by the interface BaseStream, using internal iteration
+Stream<String>stream = Stream.of(words);
+stream.forEach(System.out::println);
+
+========================================================================================================================
+
+* COLLECTIONS (interface) FRAMEWORK:
 
 - ordered
 - sorted
@@ -22,4 +149,23 @@ LinkedHashSet = ordered, not sorted
 
 SortedSet = ordered, sorted
 
-NavigableSet = ordered, sorted + info about other element
+NavigableSet = ordered, sorted + info about other elements
+
+TreeSet = ordered, sorted : tree structure. slow.
+
+Queue = ordered. Elements can be requested and deleted. Methods; offer(E e) and E peek() etc.
+LinkedList is also an implementation of Queue; first in, first out principle.
+
+PriorityQueue = ordered, sorted
+
+DeQueue = can be accessed from both sides
+
+-------------------------------------------------------------------------------------------------
+Interface MAP:
+= collections that contain key value pairs
+
+HashMap = not ordered, not sorted
+
+LinkedHashMap = ordered, not sorted
+
+SortedMap & NavigableMap * see Set. TreeMap is both
